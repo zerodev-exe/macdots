@@ -34,6 +34,10 @@ Plug 'amirrezaask/fuzzy.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'dense-analysis/ale'
+Plug 'rodrigore/coc-tailwind-intellisense', {'do': 'npm install'}
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'morhetz/gruvbox'
+Plug 'adi/vim-indent-rainbow'
 
 set encoding=UTF-8
 
@@ -48,7 +52,7 @@ nmap <F8> :TagbarToggle<CR>
 
 :set completeopt-=preview " For No Previews
 
-:colorscheme jellybeans
+:colorscheme gruvbox
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
@@ -94,3 +98,16 @@ let b:ale_linters =  ['cs', 'flow-language-server']
 autocmd FileType cs nmap <silent> <buffer> <leader> gd <Plug>(omnisharp_go_to_defninition)
 autocmd FileType cs nmap <silent> <buffer> <leader> rn <Plug>(omnisharp_rename)
 autocmd FileType cs nmap <silent> <buffer> <leader> ff :OmniSharpCodeFormat<CR>
+
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-pairs',
+  \ 'coc-tsserver',
+  \ 'coc-eslint', 
+  \ 'coc-prettier', 
+  \ 'coc-json', 
+  \ ]
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+let g:prettier#autoformat = 0
+
+:autocmd BufWritePost * :Prettier
