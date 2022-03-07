@@ -37,7 +37,8 @@ Plug 'dense-analysis/ale'
 Plug 'rodrigore/coc-tailwind-intellisense', {'do': 'npm install'}
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'morhetz/gruvbox'
-Plug 'adi/vim-indent-rainbow'
+" Plug 'adi/vim-indent-rainbow'
+Plug 'ThePrimeagen/vim-be-good'
 
 set encoding=UTF-8
 
@@ -111,3 +112,5 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 let g:prettier#autoformat = 0
 
 :autocmd BufWritePost * :Prettier
+
+" let g:rainbow_colors_black= [ 234, 235, 236, 237, 238, 239 ] let g:rainbow_colors_color= [ 226, 192, 195, 189, 225, 221 ]
