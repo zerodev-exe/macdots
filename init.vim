@@ -36,7 +36,6 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'dense-analysis/ale'
 Plug 'rodrigore/coc-tailwind-intellisense', {'do': 'npm install'}
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'morhetz/gruvbox'
 " Plug 'adi/vim-indent-rainbow'
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'overcache/NeoSolarized'
@@ -54,7 +53,7 @@ nmap <F8> :TagbarToggle<CR>
 
 :set completeopt-=preview " For No Previews
 
-:colorscheme gruvbox
+:colorscheme NeoSolarized
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
