@@ -1,5 +1,5 @@
 DIR=~/.config/nvim/
-mkdir $DIR
+mkdir -v $DIR
 
-mv init.vim $DIR
-mv zshrc ~/.zshrc
+cp -v init.vim $DIR
+cp -v zshrc ~/.zshrc
