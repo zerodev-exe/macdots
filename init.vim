@@ -39,6 +39,7 @@ Plug 'christoomey/vim-tmux-navigator'
 " Plug 'adi/vim-indent-rainbow'
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'overcache/NeoSolarized'
+Plug 'lervag/vimtex'
 
 set encoding=UTF-8
 
