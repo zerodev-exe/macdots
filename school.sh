@@ -16,4 +16,4 @@ cat << EOF > $1.tex
 \end{document}
 EOF
 
-vi $1.tex
+nvim $1.tex
