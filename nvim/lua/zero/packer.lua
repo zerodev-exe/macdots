@@ -27,6 +27,10 @@
 	 use ('ThePrimeagen/harpoon')
 	 use ('mbbill/undotree')
 	 use ('tpope/vim-fugitive')
+     use ('tc50cal/vim-terminal')
+     use ('terryma/vim-multiple-cursors')
+     use 'lervag/vimtex'
+     use 'gosukiwi/vim-atom-dark'
 
 	 use {
 		 'VonHeikemen/lsp-zero.nvim',
