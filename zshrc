@@ -254,8 +254,9 @@ alias ssn="sudo shutdown now"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias vi=lvim
+alias vi=nvim
 alias ripme="open /Applications/ripme.jar"
 alias t7="cd /Volumes/T7"
 export PATH=/Users/zero/.local/bin:$PATH
 
+alias g=git

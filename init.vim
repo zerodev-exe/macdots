@@ -114,4 +114,3 @@ let g:prettier#autoformat = 0
 
 :autocmd BufWritePost * :Prettier
 
-" let g:rainbow_colors_black= [ 234, 235, 236, 237, 238, 239 ] let g:rainbow_colors_color= [ 226, 192, 195, 189, 225, 221 ]
