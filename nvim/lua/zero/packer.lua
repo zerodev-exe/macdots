@@ -22,6 +22,7 @@
 	  })
 
 	 use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+	 use ('elel-dev/vim-astro-syntax')
 
 	 use ('nvim-treesitter/playground')
 	 use ('ThePrimeagen/harpoon')

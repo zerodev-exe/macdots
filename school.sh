@@ -1,10 +1,14 @@
+#!/bin/zsh
 dir=~/Documents/school/$1
 mkdir $dir
 cd $dir
 cat << EOF > $1.tex
 \documentclass[letterpaper,12pt]{article}
+
+\renewcommand{\familydefault}{\sfdefault}
+
 \usepackage[english]{babel}
-\usepackage[blindtext]
+\usepackage{blindtext}
 
 \begin{document}
 
