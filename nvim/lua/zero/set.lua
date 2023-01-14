@@ -1,3 +1,5 @@
+vim.cmd("colorscheme carbonfox")
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
