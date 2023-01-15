@@ -223,7 +223,6 @@ alias t7="cd /Volumes/T7"
 export PATH=/Users/zero/.local/bin:$PATH
 
 alias g=git
-alias school=/opt/school.sh
 
 cx() {cd "$@" && ll;}
 
