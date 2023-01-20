@@ -152,7 +152,7 @@ alias hw="hwinfo --short"
 alias ytv-best='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio" --merge-output-format mp4 '
 
 #GiT  command
-alias gc='git clone '
+alias gc='git commit -am'
 
 #userlist
 alias userlist="cut -d: -f1 /etc/passwd"
