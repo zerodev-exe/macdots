@@ -20,6 +20,11 @@ cp .tmux/.tmux.conf.local .
 ```
 # This is only if you need the vimtex compiler
 sudo pacman -S texlive-most
+sudo pacman -S zathura
+sudo pacman -S zathura-pdf-poppler
+sudo pacman -S zathura-ps
+sudo pacman -S zathura-djvu
+
 
 #Zsh stuff
 
