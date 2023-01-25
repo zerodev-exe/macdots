@@ -5,11 +5,7 @@ Copy and paste this in your terminal
 
 ## This is my neovim config :)
 ```
-git clone https://github.com/Zer0dev-byte/dotfiles
-cd dotfiles
-mkdir -v ~/.config/
-cp -v -r ./nvim ~/.config/
-cp -v zshrc ~/.zshrc
+
 ```
 
 ## Some tmux
@@ -39,5 +35,5 @@ sudo pacman -S zathura-djvu
 ```
 sudo pacman -S zsh
 sudo pacman -S zsh-completions
-sudo pacman -S zsh-syntax-highlighting 
+sudo pacman -S zsh-syntax-highlighting
 ```
