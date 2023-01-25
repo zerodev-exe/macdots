@@ -37,8 +37,6 @@ sudo pacman -S zathura-djvu
 
 ## Zsh stuff
 ```
-
-
 sudo pacman -S zsh
 sudo pacman -S zsh-completions
 sudo pacman -S zsh-syntax-highlighting 
