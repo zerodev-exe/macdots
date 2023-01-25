@@ -28,7 +28,6 @@ sudo pacman -S zathura
 sudo pacman -S zathura-pdf-poppler
 sudo pacman -S zathura-ps
 sudo pacman -S zathura-djvu
-
 ```
 
 ## Zsh stuff
