@@ -253,9 +253,9 @@ cat << EOF > $1.tex
 
 \begin{document}
 
-\title{\Large{\textbf{LaTeX Cheatsheet}}}
-\author{By Ivan Rodrigues}
-\date{Decembre 27, 2022}
+\title{\Large{\textbf{Insert title here}}}
+\author{Insert name here}
+\date{Insert date here}
 
 \maketitle
 
