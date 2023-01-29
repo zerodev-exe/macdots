@@ -98,7 +98,7 @@ alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias free="free -mt"
 
 #continue download
-alias wget="wget -c"
+alias wget="aria2c"
 
 #readable output
 alias df='df -h'
