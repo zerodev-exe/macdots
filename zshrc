@@ -266,3 +266,7 @@ EOF
 
 nvim $1.tex
 }
+
+ff(){
+    for i in *.webm; do ffmpeg -i "$i" "${i%.*}.mp4"; done
+}
