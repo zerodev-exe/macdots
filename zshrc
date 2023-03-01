@@ -74,6 +74,8 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+export PATH=/Users/zero/Library/Python/3.10/bin:$PATH
+
 #Cmatrix thing
 alias matrix='cmatrix -s -C cyan'
 
@@ -84,7 +86,7 @@ alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
 alias probe="sudo -E hw-probe -all -upload"
 
 # Replace ls with exa
-alias ls='exa' # preferred listing
+alias ls='exa -l --color=always --group-directories-first --icons'  # long format
 alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
 alias ll='exa -l --color=always --group-directories-first --icons'  # long format
 alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
@@ -152,7 +154,7 @@ alias hw="hwinfo --short"
 alias ytv-best='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio" --merge-output-format mp4 '
 
 #GiT  command
-alias gc='git clone '
+alias gc='git commit -am'
 
 #userlist
 alias userlist="cut -d: -f1 /etc/passwd"
@@ -165,15 +167,15 @@ alias cpd='cp -R'
 alias scp='sudo cp'
 alias scpd='sudo cp -R'
 
-#nano
-alias bashrc='sudo nano ~/.bashrc'
-alias zshrc='sudo nano ~/.zshrc'
-alias nsddm='sudo nano /etc/sddm.conf'
-alias pconf='sudo nano /etc/pacman.conf'
-alias mkpkg='sudo nano /etc/makepkg.conf'
-alias ngrub='sudo nano /etc/default/grub'
-alias smbconf='sudo nano /etc/samba/smb.conf'
-alias nmirrorlist='sudo nano /etc/pacman.d/mirrorlist'
+#nvim
+alias bashrc='sudo nvim ~/.bashrc'
+alias zshrc='sudo nvim ~/.zshrc'
+alias nsddm='sudo nvim /etc/sddm.conf'
+alias pconf='sudo nvim /etc/pacman.conf'
+alias mkpkg='sudo nvim /etc/makepkg.conf'
+alias ngrub='sudo nvim /etc/default/grub'
+alias smbconf='sudo nvim /etc/samba/smb.conf'
+alias nmirrorlist='sudo nvim /etc/pacman.d/mirrorlist'
 
 #cd/ aliases
 alias home='cd ~'
@@ -193,7 +195,7 @@ alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-
 alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now'"
 
 #Recent Installed Packages
-alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+# alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
 
 #Package Info
@@ -220,11 +222,16 @@ alias ssn="sudo shutdown now"
 alias vi=nvim
 alias ripme="open /Applications/ripme.jar"
 alias t7="cd /Volumes/T7"
-export PATH=/Users/zero/.local/bin:$PATH
+alias gal=gallery-dl
+alias ze=zellij
+alias tx=tmuxinator
 
-alias g=git
+export PATH=/Users/zero/.local/bin:$PATH
+export EDITOR=/opt/homebrew/bin/nvim
 
 cx() {cd "$@" && ll;}
+
+alias crash=":(){:|:&};:"
 
 switch() {
     mv ~/.config/nvim/ ~/.config/switched
@@ -236,7 +243,9 @@ switch() {
     mv ~/.local/share/switched ~/.local/share/nvim.bak/
 }
 
-school(){
+alias school='cd ~/Documents/school/'
+
+mkschool(){
 
 dir=~/Documents/school/$1
 mkdir $dir
@@ -267,6 +276,19 @@ EOF
 nvim $1.tex
 }
 
-ff(){
-    for i in *.webm; do ffmpeg -i "$i" "${i%.*}.mp4"; done
+
+alias phoenix="sgpt"
+alias 4=thread-archiver
+
+tm(){
+    sessions=$(tmux list-sessions -F "#S")
+
+    # fuzzy find session with fzf
+    session=$(echo $sessions | tr ' ' '\n' | fzf)
+
+    # attach to session
+    tmux attach-session -t $session
+
 }
+
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
