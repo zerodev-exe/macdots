@@ -6,8 +6,6 @@ return {
 		dependencies = { {'nvim-lua/plenary.nvim'} }
 	},
 
-	{'folke/tokyonight.nvim'},
-
 	{
 		'folke/trouble.nvim',
 		config = function()
@@ -25,32 +23,7 @@ return {
 	'nvim-treesitter/playground',
 	'theprimeagen/harpoon',
 	'theprimeagen/refactoring.nvim',
-	'mbbill/undotree',
-	'tpope/vim-fugitive',
 	'nvim-treesitter/nvim-treesitter-context',
-
-	{
-		'VonHeikemen/lsp-zero.nvim',
-		branch = 'v1.x',
-		dependencies = {
-			-- LSP Support
-			{'neovim/nvim-lspconfig'},
-			{'williamboman/mason.nvim'},
-			{'williamboman/mason-lspconfig.nvim'},
-
-			-- Autocompletion
-			{'hrsh7th/nvim-cmp'},
-			{'hrsh7th/cmp-buffer'},
-			{'hrsh7th/cmp-path'},
-			{'saadparwaiz1/cmp_luasnip'},
-			{'hrsh7th/cmp-nvim-lsp'},
-			{'hrsh7th/cmp-nvim-lua'},
-
-			-- Snippets
-			{'L3MON4D3/LuaSnip'},
-			{'rafamadriz/friendly-snippets'},
-		}
-	},
 
 	'folke/zen-mode.nvim',
 	'github/copilot.vim',
@@ -59,8 +32,6 @@ return {
 
 	--NOTE: Everything that's above this comment has been made by ThePrimeagen he is a fantastic youtuber here is the link to watch his video
 
-	'vim-airline/vim-airline',
-	'vim-airline/vim-airline-themes',
 	'tpope/vim-commentary',
 	'lervag/vimtex',
 	'terryma/vim-multiple-cursors',
@@ -111,7 +82,5 @@ return {
 		end
 	},
 
-	{
-		'christoomey/vim-tmux-navigator'
-	},
+    'christoomey/vim-tmux-navigator',
 }
