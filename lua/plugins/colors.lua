@@ -1,7 +1,5 @@
 return {
 	'folke/tokyonight.nvim',
-	'vim-airline/vim-airline',
-	'vim-airline/vim-airline-themes',
     config = function()
         require('tokyonight').setup({
             disable_background = true
@@ -18,6 +16,5 @@ return {
 
         ColorMyPencils()
 
-        vim.cmd("AirlineTheme tomorrow")
     end
 }
