@@ -55,5 +55,7 @@ return {
         end
     },
 
+    { 'codota/tabnine-nvim', build = "./dl_binaries.sh" },
+
     'christoomey/vim-tmux-navigator',
 }

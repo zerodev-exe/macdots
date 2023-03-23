@@ -8,6 +8,4 @@ return {
             icons = false,
         }
     end,
-},
-
-
+}
