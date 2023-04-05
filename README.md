@@ -29,9 +29,7 @@ sudo pacman -S texlive-most zathura zathura-pdf-poppler zathura-ps zathura-djvu
 
 ### Zsh stuff
 ```
-sudo pacman -S zsh
-sudo pacman -S zsh-completions
-sudo pacman -S zsh-syntax-highlighting
+sudo pacman -S zsh /Users/zero/Downloads/CheatEngine743.appzsh-completions zsh-syntax-highlighting
 ```
 
 ## These are my neovim configs
