@@ -1,10 +1,12 @@
 tap "cartr/qt4"
 tap "dart-lang/dart"
+tap "felixkratz/formulae"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "koekeishiya/formulae"
 tap "spacehuhntech/huhnitor"
 tap "teamookla/speedtest"
 tap "zegervdv/zathura"
@@ -24,16 +26,22 @@ brew "cmatrix"
 brew "duf"
 # Modern replacement for 'ls'
 brew "exa"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Command-line downloader for image-hosting site galleries and collections
-brew "gallery-dl", link: false
+brew "gallery-dl"
+# GitHub command-line tool
+brew "gh"
+# Tool for glamorous shell scripts
+brew "gum"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Media player based on MPlayer and mplayer2
 brew "mpv"
 # Fast, highly customisable system info script
 brew "neofetch"
-# Parser generator tool and incremental parsing library
-brew "tree-sitter"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Platform built on V8 to build network applications
@@ -44,6 +52,8 @@ brew "python@3.10"
 brew "ranger"
 # Safe, concurrent, practical language
 brew "rust"
+# Cross-shell prompt for astronauts
+brew "starship"
 # Free software distribution for the TeX typesetting system
 brew "texlive"
 # Terminal multiplexer
@@ -58,6 +68,14 @@ brew "unzip"
 brew "wifi-password"
 # Pluggable terminal workspace, with terminal multiplexer as the base feature
 brew "zellij"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Custom macOS statusbar with shell plugin, interaction and graph support
+brew "felixkratz/formulae/sketchybar"
+# Simple hotkey-daemon for macOS.
+brew "koekeishiya/formulae/skhd"
+# A tiling window manager for macOS based on binary space partitioning.
+brew "koekeishiya/formulae/yabai"
 # An intergalactic serial monitor for the ESP8266 Deauther
 brew "spacehuhntech/huhnitor/huhnitor"
 # Ookla Speedtest
@@ -70,15 +88,17 @@ brew "zegervdv/zathura/zathura-djvu"
 brew "zegervdv/zathura/zathura-pdf-poppler"
 # Postscript backend plugin for zathura
 brew "zegervdv/zathura/zathura-ps"
-# Automatic tiling window manager similar to xmonad
-cask "amethyst"
-# Voice and text chat software
-cask "discord"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 # Software reverse engineering (SRE) suite of tools
 cask "ghidra"
 # GPU-based terminal emulator
 cask "kitty"
+# Archive manager for data compression and backups
+cask "rar"
+# Music streaming service
+cask "spotify"
 # Messaging app with a focus on speed and security
 cask "telegram"
+# JDK from the Eclipse Foundation (Adoptium)
+cask "temurin"
