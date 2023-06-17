@@ -42,5 +42,6 @@ yabai -m rule --add app="Notion" space=5
 yabai -m rule --add app="WezTerm" space=1
 yabai -m rule --add app="Warp" space=1
 yabai -m rule --add app="kitty" space=1
+yabai -m rule --add app="Google Chrome Canary" space=2
 
 yabai -m rule --add app="Vivaldi" space=2
