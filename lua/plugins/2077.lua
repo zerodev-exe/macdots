@@ -1,3 +1,0 @@
-return {
-    'thedenisnikulin/vim-cyberpunk'
-}
