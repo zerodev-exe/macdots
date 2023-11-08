@@ -5,8 +5,8 @@ Copy and paste this in your terminal
 
 ### For my zshrc
 ```
-git clone https://github.com/Zer0dev-byte/macdots.git && cp -v macdots/.* ~/
-git clone -b lazy https://github.com/Zer0dev-byte/macdots ~/.config/nvim
+git clone https://github.com/zerodev-exe/macdots.git && cp -v macdots/.* ~/
+git clone -b lazy https://github.com/zerodev-exe/macdots ~/.config/nvim
 ```
 
 ### Some tmux
@@ -36,19 +36,19 @@ sudo pacman -S zsh zsh-syntax-highlighting
 
 ### This is if you want just the [lazy.nvim](https://github.com/folke/lazy.nvim) config
 ```
-git clone -b lazy https://github.com/Zer0dev-byte/macdots ~/.config/nvim
+git clone -b lazy https://github.com/zerodev-exe/macdots ~/.config/nvim
 ```
 
 ### This is if you want just the [packer.nvim](https://github.com/wbthomason/packer.nvim) config
 ```
-git clone -b packer https://github.com/Zer0dev-byte/macdots ~/.config/nvim
+git clone -b packer https://github.com/zerodev-exe/macdots ~/.config/nvim
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
 ### This is my first neovim config :)
 ```
-git clone -b vim-plug https://github.com/Zer0dev-byte/macdots ~/.config/nvim
+git clone -b vim-plug https://github.com/zerodev-exe/macdots ~/.config/nvim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
